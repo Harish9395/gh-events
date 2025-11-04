@@ -4,8 +4,19 @@ on:
     types:
     - opened
 #    - edited
-  workflow_dispatch:
-
+    branches:
+      - main
+      - 'dev-*'
+      - 'feeat/**'
+  workflow_dispatch: 
+  push: 
+    branches:
+      - main
+      - 'dev-*'
+      - 'feat/**'
+  #   - deveploper-1
+    paths-ignore:
+      - '.github/workflow/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
