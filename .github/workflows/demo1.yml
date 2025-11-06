@@ -6,10 +6,10 @@ on:
 #    - edited
     - labeled
     - unlabeled
-    branches:
-      - main
-      - 'dev-*'
-      - 'feeat/**'
+    # branches:
+    #   - main
+    #   - 'dev-*'
+    #   - 'feeat/**'
   workflow_dispatch: 
   # push: 
   #   branches:
